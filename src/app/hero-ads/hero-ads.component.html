@@ -1,4 +1,10 @@
 <div class='hero-ads'>
-    <img [src]='ads.image' alt='Ads {{ ads.id }}' class='ads-image'>
-    <progress value="{{ ads.progress }}" max="100" class='ads-progress'></progress>
+    <ng-container *ngIf="ads.image">
+        <img [src]="ads.image" alt="Ads {{ ads.id }}" class="ads-image">
+    </ng-container>
+    <ng-container *ngIf="!ads.image">
+        <div class="empty-image-placeholder"></div>
+    </ng-container>
+
+    <progress *ngIf="ads.progress !== 0" [value]="ads.progress" max="100" class="ads-progress"></progress>
 </div>

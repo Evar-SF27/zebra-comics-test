@@ -1,5 +1,5 @@
 export interface HeroAds {
     id: Number,
-    image: String,
+    image: String | null,
     progress: Number
 }

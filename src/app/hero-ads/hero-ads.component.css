@@ -2,13 +2,22 @@
     margin: 0px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 5px;
 }
 
 .ads-image {
     height: 40px;
     width: 60px;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+.empty-image-placeholder {
+    height: 40px;
+    width: 60px;
+    background: rgba(217, 217, 217, 1);
+    border-radius: 5px;
 }
 
 .ads-progress {
