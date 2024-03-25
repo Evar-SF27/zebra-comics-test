@@ -1,16 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Resume } from '../resume';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [],
-  template: `
-    <p>
-      resume works!
-    </p>
-  `,
+  imports: [NgIf],
+  templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
 })
 export class ResumeComponent {
-
+  @Input() resume!: Resume;
 }

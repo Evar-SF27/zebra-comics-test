@@ -1,0 +1,46 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 200px;
+}
+
+.resume-container {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.resume-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-name {
+    font-size: 16px;
+    color:rgb(200, 200, 200);
+}
+
+.resume-progress {
+    margin: 5px;
+    width: 100%;
+    height: 5px;
+    background-color: #adadad00;
+}
+
+.resume-progress::-webkit-progress-bar {
+    background-color: #adadad; 
+    border-radius: 10px; 
+}
+
+.resume-progress::-webkit-progress-value {
+    background-color: #ffffff; 
+    border-radius: 10px;
+}
+
+.resume-progress::-moz-progress-bar {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+}

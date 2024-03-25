@@ -4,20 +4,20 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.126) 100%);
 }
 
-.recommendation {
+.tab {
     margin: 10px 0px;
     margin-left: 10px;
-    overflow-x: scroll;
 }
 
-.recommendation-list {
+.tab-list {
     display: flex;
     align-items: center;
+    height: fit-content;
     overflow-x: scroll;
     gap: 10px;
 }
 
-.recommendation-title {
+.tab-title {
     margin: 20px 0px;
     font-weight: 500;
     font-size: 22px;
