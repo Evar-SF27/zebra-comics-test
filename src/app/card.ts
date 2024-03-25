@@ -1,6 +1,7 @@
 export interface Card {
     id: Number,
-    image: String,
-    new: boolean,
+    image: String | null,
+    newDay: boolean,
+    newWeek: boolean,
     name: String,
 }

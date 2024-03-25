@@ -1,0 +1,28 @@
+.recommended {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 310px;
+}
+
+.recommended-container {
+    height: 250px;
+    width: 170px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.recommended-status {
+    margin: 5px;
+    background-color: rgba(189, 0, 2, 1);
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.recommended-name {
+    font-size: 17px;
+    color:rgb(200, 200, 200);
+}

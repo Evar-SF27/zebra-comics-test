@@ -1,0 +1,18 @@
+<div class='recommended'>
+    <div 
+        class='recommended-container' 
+        [style.background-image]="recommended.image ? 'url(' + recommended.image + ')' : 'none'" 
+        [style.background-color]="recommended.image ? 'transparent' : '#ccc'">  
+        <ng-container *ngIf='recommended.newDay || recommended.newWeek'>
+            <div class='recommended-status'>
+                <ng-container *ngIf='recommended.newDay' >
+                    <p>NEW TODAY</p>
+                </ng-container>
+                <ng-container *ngIf='recommended.newWeek'>
+                    <p>NEW THIS WEEK</p>
+                </ng-container>
+            </div>
+        </ng-container>    
+    </div>
+    <p class='recommended-name'>{{ recommended.name }}</p>
+</div>
