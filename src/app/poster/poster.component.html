@@ -1,0 +1,20 @@
+<div class='poster'>
+    <div class='overlay'></div>
+    <div 
+        class='poster-container' 
+        [style.background-image]="poster.image ? 'url(' + poster.image + ')' : 'none'" 
+        [style.background-color]="poster.image && 'transparent'">  
+        <p class='poster-name'>{{ poster.name }}</p>
+        <ng-container *ngIf='poster.newDay || poster.newWeek'>
+            <div class='poster-status'>
+                <ng-container *ngIf='poster.newDay' >
+                    <p>NEW TODAY</p>
+                </ng-container>
+                <ng-container *ngIf='poster.newWeek'>
+                    <p>NEW THIS WEEK</p>
+                </ng-container>
+            </div>
+        </ng-container>    
+    </div>
+
+</div>

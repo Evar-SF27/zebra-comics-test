@@ -8,6 +8,8 @@ import { ResumeComponent } from '../resume/resume.component';
 import { Resume } from '../resume';
 import { ExtraComponent } from '../extra/extra.component';
 import { Extra } from '../extra';
+import { Poster } from '../poster';
+import { PosterComponent } from '../poster/poster.component';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +20,7 @@ import { Extra } from '../extra';
     RecommendationsComponent,
     ResumeComponent,
     ExtraComponent,
+    PosterComponent,
     NgFor,
     NgIf
   ],
@@ -134,6 +137,68 @@ export class HomeComponent {
       title: "https://s3-alpha-sig.figma.com/img/c1b4/c460/97422b3bd18eb1a7d071e25ab9addce3?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YuU12HLWezjoQV~r4uVMD7qBO4jiZNbusxEIsGHDelki7pl14CDV2Aiza1oTrDfvMwfpJuvIegs8Yu5MTBtnu8YrFBuN2SJYcg8SjQKFt7ObSeG~Ji3b6cNHeP6ygOjRvEv6z7KDA-fUjRrevsEN9Z4bDdTAqqgDouI1wFiCOB9R3xiIpYD~s3n5SlOmVAhYbUABywDJ78YTFSCtsH1oLCMjC8kiV4wxfePtWTzxH0x1n55fQDGqr1CoAa~z1XuIVyKSPC8argf2BuQI~GPCV-hwE0s76IcF~ylGfy8iX5L42p-5pJdYnw0Q98g3XTjKNTIv-JnkfTQPMtI88hQWFA__",
       description: "This is the comic synopsis which is clickable to open more details about it. Let's add some new text here."
     }
+  ];
+
+  startList: Card[] = [
+    {
+      id: 0,
+      image: null,
+      newDay: true,
+      newWeek: false,
+      name: 'Chronicles of Totemism'
+    },
+    {
+      id: 1,
+      image: null,
+      newDay: false,
+      newWeek: false,
+      name: 'Picaso and The First Dragon'
+    },
+    {
+      id: 2,
+      image: null,
+      newDay: false,
+      newWeek: true,
+      name: 'Doors or Windows?'
+    },
+    {
+      id: 3,
+      image: null,
+      newDay: false,
+      newWeek: false,
+      name: 'Retrograde'
+    },
+    {
+      id: 4,
+      image: null,
+      newDay: false,
+      newWeek: false,
+      name: 'Alice and the Chapters of WinterFel'
+    },
+  ];
+
+  posterList: Poster[] = [
+    {
+      id: 0,
+      name: 'BEASTS OF TAZETI',
+      newDay: true,
+      newWeek: false,
+      image: "https://s3-alpha-sig.figma.com/img/37dd/0947/c56696961b7f87fc730ff77684c608c1?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZHAD7-DWhcFIla~tp5O19OpRvnPon5tGCrz5VeuanaBZ3rWJHs5AHIX4nypWSeNfti8mdN3gw7vT75Rxh4Yp0D686r~ioGbj11VZfV2w0rtovSi2SfrnYmFEaV~LnX8FWrrPc~P5TJ~ZZlcm5ASGBtxom60kqQI9Zp5jeHAJ7BN53zvzfcU3XrWzZ~ZNoxT6CL~uh6b9ZmtpSMkAguHaF1I3mS9sB5gTxr~IAFmFXsYHQtcut8SzgyY6BiTC5D7YAcy7lGby21Itx98ECpUPnV~enptzP1zeStnkHrb~nb3YHqa7maK5xW9DYSfQe23ZHBsbPwVw6mq6hXIlxsdznw__"
+    },
+    {
+      id: 1,
+      name: 'SHORTER HEADING',
+      newDay: false,
+      newWeek: false,
+      image: null
+    },
+    {
+      id: 2,
+      name: 'NOTICE BACKGROUND OVERLAY',
+      newDay: true,
+      newWeek: false,
+      image: null
+    },
   ];
 
 }
