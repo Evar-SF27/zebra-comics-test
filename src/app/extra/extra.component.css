@@ -1,0 +1,62 @@
+.extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 5px;
+    width: 350px;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.extra-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(189, 0, 2, 1);
+    width: 50px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.extra-day {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.extra-month {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.extra-title {
+    height: 90px;
+    width: 200px;
+}
+
+.extra-details {
+    width: 92%;
+    margin-inline: auto;
+    color: rgb(230, 230, 230);
+}
+
+.extra-details p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.extra-button {
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    padding: 15px 20px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    background: linear-gradient(268.83deg, #995EBD 0%, #BD5E5F 100%);
+    color: white;
+    font-size: 16px;
+}

@@ -1,0 +1,12 @@
+<div class='extra' [style.background-image]="extra.image ? 'url(' + extra.image + ')' : 'none'" 
+[style.background-color]="extra.image ? 'transparent' : '#bbb'">
+    <div class='extra-date'>
+        <p class='extra-month'>{{ extra.month }}</p>
+        <p class='extra-day'>{{ extra.day }}</p>
+    </div>
+    <div class='extra-details'>
+        <img [src]='extra.title' alt='{{ extra.id }}' class='extra-title'>
+        <p>{{ extra.description.length > 30 ? extra.description.slice(0, 80) + '...' : extra.description }}</p>
+        <button type='button' class='extra-button'>${{ extra.price }} / year</button>
+    </div>
+</div>

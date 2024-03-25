@@ -34,4 +34,11 @@
           </div>
         </div>
     </div>
+    <div class='tab'>
+        <h2 class='tab-title'>Extras</h2>
+        <div class='tab-list'>
+          <app-extra *ngFor='let extra of extraList' [extra]='extra'>        
+          </app-extra>
+        </div>
+    </div>
   </section>

@@ -14,7 +14,7 @@
     align-items: center;
     height: fit-content;
     overflow-x: scroll;
-    gap: 10px;
+    gap: 15px;
 }
 
 .tab-title {
