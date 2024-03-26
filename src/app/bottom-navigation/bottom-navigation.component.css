@@ -1,15 +1,14 @@
 .footer {
     position: fixed;
-    bottom: 5px;
-    border-bottom-left-radius: 50px; 
-    border-bottom-right-radius: 50px;
+    bottom: 0;
     height: 75px;
-    width: 390px;
+    width: 400px;
     padding-inline: 5px;
     background-color: rgba(0, 0, 0, 0.95);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 9999;
 }
 
 .footer-col {
