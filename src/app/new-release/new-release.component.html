@@ -1,0 +1,26 @@
+<div class='release' [style.background-image]="release.image ? 'url(' + release.image + ')' : 'none'" 
+[style.background-color]="release.image ? 'transparent' : '#bbb'">
+    <div class='overlay'></div>
+    <div class='release-top'>
+        <p class='release-header'>New Release</p>
+        <div class='release-bars'>
+            <progress *ngIf="release.progress_one !== 0" [value]="release.progress_one" max="100" class="release-progress"></progress>
+            <progress *ngIf="release.progress_two !== 0" [value]="release.progress_two" max="100" class="release-progress"></progress>
+            <progress *ngIf="release.progress_three !== 0" [value]="release.progress_three" max="100" class="release-progress"></progress>
+        </div>
+    </div>
+    <div class='release-details'>
+        <ng-container *ngIf='release.new'>
+            <div class='release-status'>
+                <ng-container *ngIf='release.new' >
+                    <p>COMING SOON</p>
+                </ng-container>
+            </div>
+        </ng-container> 
+        <img [src]='release.title' alt='{{ release.id }}' class='release-title'>
+        <p class='trending-category'>{{ release.category.join(' . ') }}</p>
+        <div class='release-text'>
+            <p>{{ showFullDescription ? release.description : (release.description.length > 85 ? release.description.slice(0, 85) + '...' : release.description) }} <span class='release-btn' (click)="toggleDescription()">{{ showFullDescription ? 'less' : 'more' }}</span></p>
+        </div>
+    </div>
+</div>

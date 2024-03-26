@@ -158,7 +158,12 @@
         </div>
       </div>
     </div>
-    <!-- New Release -->
+    <div class='tab'>
+      <div class='tab-list'>
+        <app-new-release *ngFor='let release of releaseList' [release]='release'>        
+        </app-new-release>
+      </div>
+    </div>
     <div class='tab'>
       <h2 class='tab-title'>Teen</h2>
       <div class='tab-list'>

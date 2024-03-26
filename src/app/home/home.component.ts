@@ -14,6 +14,8 @@ import { SeriesContainerComponent } from '../series-container/series-container.c
 import { Series } from '../series';
 import { Trending } from '../trending';
 import { TrendingComponent } from '../trending/trending.component';
+import { NewRelease } from '../new-release';
+import { NewReleaseComponent } from '../new-release/new-release.component';
 
 @Component({
   selector: 'app-home',
@@ -27,6 +29,7 @@ import { TrendingComponent } from '../trending/trending.component';
     PosterComponent,
     SeriesContainerComponent,
     TrendingComponent,
+    NewReleaseComponent,
     NgFor,
     NgIf
   ],
@@ -290,5 +293,19 @@ export class HomeComponent {
       new: true,
       views: '10.2k'
     },
+  ];
+
+  releaseList: NewRelease[] = [
+    {
+      id: 0,
+      progress_one: 100,
+      progress_two: 100,
+      progress_three: 79,
+      image: 'https://s3-alpha-sig.figma.com/img/f94d/6ee0/c7bc64e8ef9fae783a417595a547c3ec?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XFkGHIw1AL0fE80akVtquywx6R~TANKp02S7uigwkcIYFP4iznslRA5aSq3YIUHbByZzFn6ZeSpqpmYoNjp9G5ej84ThRrkgQ1VobkDLFmxYUq3UM-CrqjCaAjVM-cNX5woUUj-buxGglOnzTDsS5C0I7U~elSBSrUebIIWTptwbbK3uokGVNrA~AO8Dct~IzsY9zv5VWpn8-t36xxyAXq8Or~PyOR2lziam4Hiju7PkRBfZAVCr~V1k9AVGyHhJXUjSRrcN87lRLM9hTjDev1DXKXZb9TelmlYRDJh~1eTp1ZAfimUUri5l15k9FWm3~CGVtNNPszGe6M--NRsIIQ__',
+      new: true,
+      title: 'https://s3-alpha-sig.figma.com/img/45e8/4241/98ac133213097010f5d8539240913ccc?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Te7w8zmGA7rl-J70xb0fyrtryEsvO3zCGTqKWS1ZdQUnC1wB2ylZjkPAG-Uq82eLk6iuzSg31FfV0shZ21cigxFAGeE60fgJsm8KReZYbUpQjbLQ6kFYNn4h3Ntd~nSvFxRVWagU6vNNiLEcRwDybaignEFxlQUVPABRme3cTjgmySBcvnV6wSr1bT3ErKCS4rMjf3vDVeJNjwfDs8LVNmu1tmmvh5sP6NN50xFAqQWoggIQz1AKpP57dXZHnvVUuscrdpWeIfLPW4DRXyHJ-WhsZyHlHvkTUC80EXItnMLK4AYqmYk3iexRph1iG36Tm-g7-ns0YmGLPm1vqkE4AQ__',
+      category: ['Action', 'Comedy', 'Family'],
+      description: "This is the comic synopsis which is clickable to open more details about it. Let's add some."
+    }
   ];
 }

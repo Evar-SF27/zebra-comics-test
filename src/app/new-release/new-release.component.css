@@ -1,0 +1,90 @@
+.release {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 15px;
+    width: 350px;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.release-top {
+    position: relative;
+    z-index: 10;
+}
+
+.release-header {
+    font-size: 20px;
+}
+
+.release-progress {
+    margin: 5px;
+    width: 50px;
+    height: 5px;
+    background-color: #adadad00;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    display: block;
+}
+
+.release-progress::-webkit-progress-bar {
+    background-color: #adadad; 
+    border-radius: 10px; 
+}
+
+.release-progress::-webkit-progress-value {
+    background-color: #ffffff; 
+    border-radius: 10px;
+}
+
+.release-progress::-moz-progress-bar {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+}
+
+.release-title {
+    height: 70px;
+    width: 200px;
+}
+
+.release-details {
+    position: relative;
+    margin-inline: auto;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.release-text p {
+    font-size: 14px;
+}
+
+.release-btn {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.release-status {
+    width: fit-content;
+    margin: 5px;
+    background-color: rgba(189, 0, 2, 1);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: 100;
+    font-size: 10px;
+}
