@@ -3,6 +3,7 @@
     top: 0;
     width: 400px;
     height: 45px;
+    z-index: 9999;
     display: flex;
     justify-content: space-between;
     align-items: center;
