@@ -72,3 +72,18 @@
     flex-wrap: wrap;
     width: calc(170px * 6 + 10px * 5);
 }
+
+.btn-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.share-btn {
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
