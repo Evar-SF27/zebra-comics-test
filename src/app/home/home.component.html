@@ -121,7 +121,6 @@
         </div>
       </div>
     </div>
-    <!-- Top Series -->
     <div class='tab'>
       <h2 class='tab-title'>Top Series</h2>
       <div class='tab-list'>
@@ -135,7 +134,14 @@
         </div>
       </div>
     </div>
-    <!-- Trending -->
+    <div class='tab'>
+      <h2 class='tab-title'>Trending</h2>
+      <div class='tab-list'>
+        <app-trending *ngFor='let trending of trendingList' 
+            [trending]='trending'>        
+        </app-trending>
+      </div>
+    </div>
     <div class='tab'>
       <h2 class='tab-title'>Adventure</h2>
       <div class='tab-list'>

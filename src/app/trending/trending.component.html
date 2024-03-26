@@ -1,0 +1,28 @@
+<div class='trending'>
+    <div 
+        class='trending-container' 
+        [style.background-image]="trending.image ? 'url(' + trending.image + ')' : 'none'" 
+        [style.background-color]="trending.image ? 'transparent' : '#ccc'">  
+        <ng-container *ngIf='trending.new'>
+            <div class='trending-status'>
+                <ng-container *ngIf='trending.new' >
+                    <p>NEW BADGE</p>
+                </ng-container>
+            </div>
+        </ng-container>    
+    </div>
+    <div class='trending-info'>
+        <h1>{{ (+trending.id) < 10 ? '0' + trending.id : trending.id }}</h1>
+        <div>
+            <p class='trending-category'>{{ trending.category.join(' . ') }}</p>
+            <p class='trending-name'>{{ trending.name }}</p>
+            <div class='trending-views'>
+                <svg width="15" height="15" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.25002 5.50016C6.25002 6.19052 5.69038 6.75016 5.00002 6.75016C4.30966 6.75016 3.75002 6.19052 3.75002 5.50016C3.75002 4.80981 4.30966 4.25016 5.00002 4.25016C5.69038 4.25016 6.25002 4.80981 6.25002 5.50016Z" stroke="#83868F" stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.02429 5.50015C1.55524 3.80969 3.13452 2.5835 5.0002 2.5835C6.86589 2.5835 8.44518 3.80971 8.97612 5.50018C8.44517 7.19063 6.86589 8.41683 5.00021 8.41683C3.13452 8.41683 1.55523 7.19062 1.02429 5.50015Z" stroke="#83868F" stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>{{ trending.views }}</p> 
+            </div>
+        </div>
+    </div>
+</div>

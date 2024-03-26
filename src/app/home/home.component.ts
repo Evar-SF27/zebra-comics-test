@@ -12,6 +12,8 @@ import { Poster } from '../poster';
 import { PosterComponent } from '../poster/poster.component';
 import { SeriesContainerComponent } from '../series-container/series-container.component';
 import { Series } from '../series';
+import { Trending } from '../trending';
+import { TrendingComponent } from '../trending/trending.component';
 
 @Component({
   selector: 'app-home',
@@ -24,6 +26,7 @@ import { Series } from '../series';
     ExtraComponent,
     PosterComponent,
     SeriesContainerComponent,
+    TrendingComponent,
     NgFor,
     NgIf
   ],
@@ -244,5 +247,48 @@ export class HomeComponent {
       name: 'The Guy Upstairs and a Longer Title as Such',
       views: 680
     }
+  ];
+
+  trendingList: Trending[] = [
+    {
+      id: 1,
+      name: 'Chronicles of Totemism',
+      image: null,
+      category: ['Action', 'Comedy'],
+      new: true,
+      views: '10.2k'
+    },
+    {
+      id: 2,
+      name: 'Chronicles of Totemism',
+      image: null,
+      category: ['Action', 'Comedy'],
+      new: true,
+      views: '10.2k'
+    },
+    {
+      id: 3,
+      name: 'Chronicles of Totemism',
+      image: null,
+      category: ['Action', 'Comedy'],
+      new: true,
+      views: '10.2k'
+    },
+    {
+      id: 4,
+      name: 'Chronicles of Totemism',
+      image: null,
+      category: ['Action', 'Comedy'],
+      new: true,
+      views: '10.2k'
+    },
+    {
+      id: 5,
+      name: 'Chronicles of Totemism',
+      image: null,
+      category: ['Action', 'Comedy'],
+      new: true,
+      views: '10.2k'
+    },
   ];
 }
