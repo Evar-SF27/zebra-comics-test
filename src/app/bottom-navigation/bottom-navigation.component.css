@@ -1,0 +1,43 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-svg {
+    fill: rgb(100, 100, 100);
+}
+
+.footer-col p {
+    color: rgb(100, 100, 100);
+}
+
+svg path {
+    fill: grey;
+}
+
+.active svg path {
+    fill: white;
+}
+
+
+.active p {
+    color: white;
+}
+
+.footer-col p {
+    font-size: 12px;
+}

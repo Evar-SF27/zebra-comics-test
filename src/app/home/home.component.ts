@@ -18,6 +18,7 @@ import { NewRelease } from '../new-release';
 import { NewReleaseComponent } from '../new-release/new-release.component';
 import { Genres } from '../genres';
 import { GenresComponent } from '../genres/genres.component';
+import { BottomNavigationComponent } from '../bottom-navigation/bottom-navigation.component';
 
 @Component({
   selector: 'app-home',
@@ -33,6 +34,7 @@ import { GenresComponent } from '../genres/genres.component';
     TrendingComponent,
     NewReleaseComponent,
     GenresComponent,
+    BottomNavigationComponent,
     NgFor,
     NgIf
   ],
