@@ -1,0 +1,9 @@
+<div class='genre'>
+    <div 
+        class='genre-container' 
+        [style.background-image]="genre.image ? 'url(' + genre.image + ')' : 'none'" 
+        [style.background-color]="genre.image ? 'transparent' : '#ccc'">  
+        <div class='overlay'></div>  
+        <p class='genre-name'>{{ genre.title }}</p>
+    </div>
+</div>

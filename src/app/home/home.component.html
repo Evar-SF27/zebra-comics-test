@@ -196,4 +196,12 @@
         </div>
       </div>
     </div>
+    <div class='tab'>
+      <h2 class='tab-title'>Genres</h2>
+      <h2 class='tab-title-sm'>Explore your favorite genres</h2>
+      <div class='genre-list'>
+        <app-genres *ngFor='let genre of genresList' [genre]='genre'>        
+        </app-genres>
+      </div>
+    </div>
   </section>

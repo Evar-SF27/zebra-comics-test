@@ -23,6 +23,13 @@
     font-size: 22px;
 }
 
+.tab-title-sm {
+    margin: 20px 0px;
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+}
+
 .tab-col {
     display: flex;
     flex-direction: column;
@@ -57,4 +64,11 @@
 .see-all-btn p {
     color: #ccc;
     font-size: 14px;
+}
+
+.genre-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: calc(170px * 6 + 10px * 5);
 }
