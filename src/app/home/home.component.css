@@ -23,6 +23,19 @@
     font-size: 22px;
 }
 
+.tab-col {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tab-col p {
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+    font-weight: 100;
+    width: fit-content;
+}
+
 .see-all {
     width: 45px;
     height: 45px;

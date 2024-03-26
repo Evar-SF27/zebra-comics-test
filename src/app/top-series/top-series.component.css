@@ -1,0 +1,48 @@
+.series {
+    display: flex;
+    gap: 10px;
+    width: 310px;
+    margin-right: 50px;
+}
+
+.series-container {
+    height: 130px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.series-info {
+    display: flex;
+    gap: 15px;
+    height: 130px;
+    align-items: center;
+}
+
+.series-rank {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.series-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 160px;
+}
+
+.series-details h5 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.series-details p {
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(200, 200, 200);
+}

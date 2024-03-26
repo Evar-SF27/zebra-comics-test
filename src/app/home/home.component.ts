@@ -10,6 +10,8 @@ import { ExtraComponent } from '../extra/extra.component';
 import { Extra } from '../extra';
 import { Poster } from '../poster';
 import { PosterComponent } from '../poster/poster.component';
+import { SeriesContainerComponent } from '../series-container/series-container.component';
+import { Series } from '../series';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +23,7 @@ import { PosterComponent } from '../poster/poster.component';
     ResumeComponent,
     ExtraComponent,
     PosterComponent,
+    SeriesContainerComponent,
     NgFor,
     NgIf
   ],
@@ -201,4 +204,45 @@ export class HomeComponent {
     },
   ];
 
+  actionSeries: Series[] = [
+    {
+      id: 1,
+      image: null,
+      name: 'The Guy Upstairs and a Longer Title as Such',
+      views: 680
+    },
+    {
+      id: 2,
+      image: null,
+      name: 'A Reverie with Nana',
+      views: 680
+    },
+    {
+      id: 3,
+      image: null,
+      name: 'Love at First Fight',
+      views: 680
+    }
+  ];
+
+  romanceSeries: Series[] = [
+    {
+      id: 1,
+      image: null,
+      name: 'The Guy Upstairs and a Longer Title as Such',
+      views: 680
+    },
+    {
+      id: 2,
+      image: null,
+      name: 'The Guy Upstairs and a Longer Title as Such',
+      views: 680
+    },
+    {
+      id: 3,
+      image: null,
+      name: 'The Guy Upstairs and a Longer Title as Such',
+      views: 680
+    }
+  ];
 }

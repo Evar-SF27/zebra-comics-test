@@ -1,0 +1,16 @@
+<div class='series'>
+    <div 
+        class='series-container' 
+        [style.background-image]="series.image ? 'url(' + series.image + ')' : 'none'" 
+        [style.background-color]="series.image ? 'transparent' : '#ccc'">      
+    </div>
+    <div class='series-info'>
+        <div class='series-rank' [style.background-image]="series.id == 1 ? 'url(/assets/image.png)' : 'none'"> 
+            {{ series.id }}
+        </div>
+        <div class='series-details'>
+            <h5>{{ series.name }}</h5>
+            <p>{{ series.views }} views</p>
+        </div>
+    </div>
+</div>
